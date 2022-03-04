@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* -----------------------------------------
+font-family: 'Libre Baskerville', serif;
+font-family: 'Poppins', sans-serif;
+
+color #48487f
+----------------------------------------- */
+body {
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-weight: 400;
+  color: rgb(126, 126, 126);
+  font-size: 13px;
+}
+a {
+  text-decoration: none;
+  color: #0000;
+}
+.color {
+  color: #48487f !important;
+  transition: all 0.5s;
+}
+.color:hover {
+  color: black !important;
+}
+a.btn {
+  padding: 10px 30px;
+}
+a.btn1 {
+  background-color: rgba(72, 72, 127, 0.8);
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+a.btn1:hover {
+  background-color: #48487f;
+  color: #fff;
+}
+a.btn2 {
+  border: #48487f solid 2px;
+  color: #48487f;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+a.btn2:hover {
+  background-color: #48487f;
+  color: #fff;
+}
+
+h6 {
+  position: relative;
+  padding-bottom: 10px;
+}
+h6::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #48487f;
+}
+/* =============== Header Section Start =============== */
+.navbar-top {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.navbar-top .col-4 .bx {
+  font-size: 20px;
+}
+.navbar-brand {
+  font-family: "Libre Baskerville", serif;
+  text-transform: uppercase;
+  color: #48487f !important;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #48487f;
+  background-size: 100%;
+}
+.navbar-nav .nav-item .nav-link {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #48487f;
+}
+.dropdown-menu .dropdown-item {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.navbar .container-xxl {
+  justify-content: start;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.55);
+  border-color: rgba(0, 0, 0, 0);
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+/* .offcanvas-header .offcanvas-title {
+} */
+/* =============== Header Section End ===============  */
+
+/* =============== Banner Section Start ===============  */
+.banner-section {
+  /* height: 500px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+  text-align: center;
+  position: relative;
+}
+.banner-section {
+  background: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner-section .cover{
+  width: 100%;
+  height: 100%;
+  position: absolute ;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.banner-section h6 {
+  position: relative;
+  z-index: 10;
+}
+
+.banner-section h2 {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  z-index: 10;
+  color: #fff;
+}
+
+.banner-section p {
+  margin: 10px 0 20px 0;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.banner-section a {
+  position: relative;
+  z-index: 10;
+}
+@media screen and (max-width: 600px) {
+  .banner-section {
+    padding: 80px 0;
+  }
+}
+/* =============== Banner Section End ===============  */
+
+/* =============== About Section Start ===============  */
+.about h6::before {
+  left: 0;
+  transform: translateX(0%);
+  width: 30px;
+}
+.about ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.about ul li a .fab {
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  border: #48487f 2px solid;
+  border-radius: 4px;
+  color: #48487f;
+  transition: all 0.5s;
+}
+.about ul li a .fab:hover {
+  background-color: #48487f;
+  color: #fff;
+  transform: scale(1.2, 1.2);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* =============== About Section End ===============  */
+
+/* =============== New Section Start ===============  */
+.new {
+  padding: 100px 0;
+}
+/* =============== New Section End ===============  */
+/* =============== core Section Start ===============  */
+.core {
+  padding: 50px 0;
+  background-color: #48487f;
+}
+.core .my-3 {
+  transition: all 0.5s;
+  color: #fff;
+  position: relative;
+  padding: 20px 0;
+  border-radius: 20px;
+  text-align: center;
+}
+.core .my-3:hover {
+  background-color: #ffff;
+  color: #000 !important;
+  transform: scale(0.9, 0.9);
+}
+.core h6::before {
+  background-color: #fff;
+}
+/* =============== core Section End ===============  */
+
+/* =============== Footer Section Start ===============  */
+footer {
+  width: 100%;
+  background: #111;
+}
+footer .content {
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .content p,
+a {
+  color: #fff;
+}
+footer .content .box {
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+}
+footer .content p {
+  text-align: justify;
+}
+footer .content .lower .topic {
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i {
+  padding-right: 16px;
+}
+footer .content .middle {
+  padding-left: 80px;
+}
+footer .content .middle a {
+  line-height: 32px;
+}
+footer .content .right input[type="text"],
+footer .content .right input[type="tel"],
+footer .content .right input[type="email"] {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+
+footer .content .right textarea {
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"] {
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #48487f;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #48487f;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover {
+  background: none;
+  color: #48487f;
+}
+footer .content .media-icons a {
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 5px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover {
+  border-color: #48487f;
+}
+footer .bottom {
+  width: 100%;
+  text-align: center;
+  color: #d9d9d9;
+  padding: 10px 0;
+}
+footer .bottom a {
+  color: #48487f;
+}
+footer a {
+  transition: all 0.3s ease;
+}
+footer a:hover {
+  color: #48487f;
+}
+@media (max-width: 1100px) {
+  footer .content .middle {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 950px) {
+  footer .content .box {
+    width: 50%;
+  }
+  .content .right {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 560px) {
+  footer {
+    position: relative;
+  }
+  footer .content .box {
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle {
+    padding-left: 0;
+  }
+}
+/* =============== Footer Section End ===============  */
